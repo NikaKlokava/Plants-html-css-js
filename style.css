@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+
+}
+
+/**************************************** common styles *********************************************/
+header,
+.welcome,
+.service,
+.contacts {
+  background: #EDF2EC;
+}
+
+/***************************************************************************************************/
+/* header */
+header {
+  min-height: 134px;
+}
+
+/* welcome*/
+.welcome {
+  min-height: 532px;
+}
+
+/* about */
+.about {
+  min-height: 666px;
+}
+
+/* service */
+.service {
+  min-height: 1300px;
+}
+
+/* prices */
+.prices {
+  min-height: 560px;
+}
+
+/* contacts */
+.contacts {
+  min-height: 550px;
+}
+
+/* footer */
+footer {
+  min-height: 130px;
+}
