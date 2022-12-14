@@ -73,6 +73,21 @@ p {
   color: #636060;
 }
 
+.button {
+  width: 160px;
+  height: 50px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  color: #E06733;
+  background: none;
+}
+
 /*********************************************** header **********************************************/
 .header-navbar {
   justify-content: space-between;
@@ -158,18 +173,14 @@ p {
   line-height: 35px;
 }
 
-.welcome button {
+.welcome .button {
   width: 158px;
   height: 44px;
   font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-  background: none;
   border: 2px solid #E06733;
   border-radius: 10px;
 }
@@ -212,10 +223,66 @@ p {
 /************************************************* service *************************************************/
 
 .service {
-  min-height: 1300px;
+  padding: 40px 109px 121px 109px;
 }
 
-/* prices */
+.service-header {
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.service-header h2 {
+  flex-basis: 306px;
+  margin-right: 142px;
+
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 38px;
+  align-items: center;
+}
+
+.buttons-container button:active {
+  color: #FFFFFF;
+  background: #E06733;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 330px));
+  column-gap: 116px;
+  row-gap: 55px;
+}
+
+.card {
+  min-height: 450px;
+}
+
+.card .texts {
+  height: 100%;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+}
+
+.card p:nth-child(1) {
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #E06733;
+}
+
+.card p:nth-child(2) {
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+}
+
+/************************************************* prices *************************************************/
+
 .prices {
   min-height: 560px;
 }

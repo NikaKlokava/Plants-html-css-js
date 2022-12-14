@@ -58,3 +58,13 @@
 .about img {
   align-self: center;
 }
+
+/************************************************* service *************************************************/
+.service {
+  padding: 60px 50px 70px 50px;
+}
+.cards-container {
+  /* grid-template-columns: repeat(2, 280px); */
+  column-gap: 106px;
+  row-gap: 38px;
+}
