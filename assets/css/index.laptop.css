@@ -1,0 +1,60 @@
+/*********************************************** header **********************************************/
+.header-navbar {
+  padding: 35px 50px;
+}
+
+
+/************************************************* welcome *************************************************/
+.welcome {
+  padding: 40px 50px 70px 50px;
+}
+
+.welcome .text-content {
+  max-width: 52%;
+}
+
+.welcome>img {
+  max-width: 42%;
+  max-height: 254px;
+  order: 1;
+}
+
+.welcome p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.welcome h1 {
+  font-size: 35px;
+  text-shadow: none;
+}
+
+/************************************************* about *************************************************/
+.about {
+  flex-direction: column;
+  padding: 40px 50px 95px 50px;
+}
+
+.about .text-content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  align-self: center;
+  max-width: 423px;
+  font-size: 35px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.about p {
+  padding-bottom: 40px;
+}
+
+.about img {
+  align-self: center;
+}

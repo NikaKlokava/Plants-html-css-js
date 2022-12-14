@@ -24,34 +24,18 @@ header,
   display: flex;
 }
 
-/*********************************************** header **********************************************/
-.header-navbar {
-  justify-content: space-between;
-  align-items: center;
-  padding: 42px 110px;
-}
-
-@media (max-width:768px) {
-  .header-navbar {
-    padding: 35px 50px;
-  }
-}
-
-@media (max-width:380px) {
-  .header-navbar {
-    padding: 36px 25px;
-  }
-}
-
-.navbar-items {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  justify-content: space-between;
-  column-gap: 46px;
+h2 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0px;
+  color: #499A18;
 }
 
 a,
-p {
+h3 {
   font-family: 'Inika', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -69,7 +53,7 @@ a:hover {
   transition: 0.5s;
 }
 
-p {
+h3 {
   line-height: 21px;
   margin: 0px;
 }
@@ -80,12 +64,34 @@ ul {
   list-style: none;
 }
 
+p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0px;
+  color: #636060;
+}
+
+/*********************************************** header **********************************************/
+.header-navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 110px;
+}
+
+.navbar-items {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-between;
+  column-gap: 46px;
+}
+
 .navbar-burger-item {
   display: none;
 }
 
 @media screen and (max-width: 650px) {
-
   .navbar-items {
     display: flex;
     flex-direction: column;
@@ -122,25 +128,22 @@ ul {
 }
 
 .welcome>img {
-  max-height: 407.36px;
+  max-height: 100%;
+  max-width: 36.7%;
 }
 
-.general-info {
+.welcome .text-content {
   max-width: 549px;
   align-self: center;
 }
 
-.welcome h1,
-.welcome p {
-  font-family: 'Inter', sans-serif;
-}
-
 .welcome h1 {
-  margin: 0px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
+  margin: 0px;
   color: #717171;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -152,11 +155,7 @@ ul {
 .welcome p {
   padding-top: 42px;
   padding-bottom: 48px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
   line-height: 35px;
-  color: #636060;
 }
 
 .welcome button {
@@ -174,72 +173,44 @@ ul {
   border: 2px solid #E06733;
   border-radius: 10px;
 }
+
 .welcome button:hover {
   color: #FFFFFF;
   background: #E06733;
   transition: 0.3s;
 }
 
-@media (max-width:768px) {
-  .welcome {
-    padding: 40px 50px 70px 50px;
-  }
-  .general-info {
-    max-width: 52%;
-  }
-  .welcome>img {
-    max-width: 42%;
-    max-height: 254px;
-    order: 1;
-  }
-
-  .welcome p {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .welcome h1 {
-    font-size: 35px;
-    text-shadow: none;
-  }
-}
-@media (max-width:380px) {
-  .welcome {
-    padding: 24px 25px;
-  }
-  .general-info {
-    max-width: 100%;
-  }
-  .welcome>img {
-    display: none;
-  }
-
-  .welcome p {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  .welcome h1 {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .welcome button {
-    width: 100px;
-    height: 34.14px;
-    font-size: 10px;
-  }
-}
-
 /************************************************* about *************************************************/
 .about {
-  min-height: 666px;
+  justify-content: space-between;
+  padding: 94px 109px;
 }
 
-/* service */
+.about h2 {
+  max-width: 463px;
+}
+
+.about span {
+  color: #E06733;
+}
+
+.about p {
+  line-height: 30px;
+  padding-top: 40px;
+}
+
+.about .text-content {
+  max-width: 605px;
+  align-self: center;
+}
+
+.about img {
+  align-self: center;
+  width: 38%;
+}
+
+/************************************************* service *************************************************/
+
 .service {
   min-height: 1300px;
 }
