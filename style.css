@@ -24,8 +24,7 @@ header,
   display: flex;
 }
 
-/***************************************************************************************************/
-/* header */
+/*********************************************** header **********************************************/
 .header-navbar {
   justify-content: space-between;
   align-items: center;
@@ -118,10 +117,124 @@ ul {
 
 /************************************************* welcome *************************************************/
 .welcome {
-  min-height: 532px;
+  justify-content: space-between;
+  padding: 62px 109px;
 }
 
-/* about */
+.welcome>img {
+  max-height: 407.36px;
+}
+
+.general-info {
+  max-width: 549px;
+  align-self: center;
+}
+
+.welcome h1,
+.welcome p {
+  font-family: 'Inter', sans-serif;
+}
+
+.welcome h1 {
+  margin: 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcome span {
+  color: #499A18;
+}
+
+.welcome p {
+  padding-top: 42px;
+  padding-bottom: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+}
+
+.welcome button {
+  width: 158px;
+  height: 44px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: none;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+}
+.welcome button:hover {
+  color: #FFFFFF;
+  background: #E06733;
+  transition: 0.3s;
+}
+
+@media (max-width:768px) {
+  .welcome {
+    padding: 40px 50px 70px 50px;
+  }
+  .general-info {
+    max-width: 52%;
+  }
+  .welcome>img {
+    max-width: 42%;
+    max-height: 254px;
+    order: 1;
+  }
+
+  .welcome p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .welcome h1 {
+    font-size: 35px;
+    text-shadow: none;
+  }
+}
+@media (max-width:380px) {
+  .welcome {
+    padding: 24px 25px;
+  }
+  .general-info {
+    max-width: 100%;
+  }
+  .welcome>img {
+    display: none;
+  }
+
+  .welcome p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .welcome h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .welcome button {
+    width: 100px;
+    height: 34.14px;
+    font-size: 10px;
+  }
+}
+
+/************************************************* about *************************************************/
 .about {
   min-height: 666px;
 }
