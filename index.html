@@ -5,39 +5,50 @@
   <title>Plants</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width">
+  <script src="index.js"></script>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
+    <div class="header-navbar flex-row">
+      <div class="logo flex-row">
+        <img src="assets/svg/logo_plant.svg" alt="logo-plant">
+        <p>Plants</p>
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="navbar-items">
+          <li class="navbar-burger-item">
+            <a class="navbar-burger-icon" href="javascript:void(0);" onclick="handleBurgerClick()">
+              <img src="assets/svg/burger.svg" alt="burger">
+            </a>
+          </li>
+          <li class="navbar-item"><a class="navbar-link" href="#home">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#about-us">About us</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#service">Service</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#price">Price</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contacts">Contacts</a></li>
+
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
-    <section class="welcome">
+    <section class="welcome" id="home">
       <h1></h1>
     </section>
-    <section class="about">
+    <section class="about" id="about-us">
       <h2></h2>
     </section>
-    <section class="service">
+    <section class="service" id="service">
       <h2></h2>
     </section>
-    <section class="prices">
+    <section class="prices" id="price">
       <h2></h2>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2></h2>
     </section>
   </main>
