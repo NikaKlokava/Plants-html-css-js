@@ -54,14 +54,24 @@ header,
 a,
 p {
   font-family: 'Inika', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   color: #000000;
 }
 
 a {
+  line-height: 50px;
   text-decoration: none;
 }
 
+a:hover {
+  color: #E06733;
+  transition: 0.5s;
+}
+
 p {
+  line-height: 21px;
   margin: 0px;
 }
 
@@ -85,9 +95,11 @@ ul {
     top: 1.7em;
     right: 3em;
   }
+
   .navbar-item {
     display: none;
   }
+
   .navbar-burger-item {
     display: block;
     width: 40px;
