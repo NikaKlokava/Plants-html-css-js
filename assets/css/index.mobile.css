@@ -70,18 +70,18 @@ h2 {
   margin-right: 0px;
 }
 
+.buttons-container {
+  max-width: 252px;
+}
+
 .button {
   width: 121px;
   height: 35px;
   font-size: 15px;
   line-height: 20px;
+  margin-bottom: 9px;
 }
 
-.buttons-container button:nth-child(2) {
-  margin-right: 0px;
-  margin-left: 10px;
-}
-
-.buttons-container button:nth-child(3) {
-  margin-top: 9px;
+.cards-container {
+  grid-template-columns: 1fr;
 }

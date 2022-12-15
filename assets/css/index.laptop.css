@@ -72,11 +72,17 @@ h2 {
 .service-header h2 {
   flex-basis: 306px;
   margin-right: 0px;
-  margin-bottom: 40px;
+}
+
+.buttons-container {
+  margin-top: 35px;
+  max-width: 559px;
+  width: 100%;
 }
 
 .cards-container {
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(2, minmax(calc(100% / 3), 280px));
+  column-gap: 15px;
   row-gap: 38px;
 }
 

@@ -98,7 +98,7 @@ p {
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: space-between;
-  column-gap: 46px;
+  column-gap: 47px;
 }
 
 .navbar-burger-item {
@@ -147,7 +147,7 @@ p {
 }
 
 .welcome .text-content {
-  max-width: 45%;
+  max-width: 549px;
   align-self: center;
 }
 
@@ -227,21 +227,21 @@ p {
 .service-header {
   flex-wrap: wrap;
   margin-bottom: 80px;
+  margin-top: -40px;
 }
 
 .service-header h2 {
   flex-basis: 306px;
   margin-right: 142px;
+  margin-top: 40px;
 }
 
 .buttons-container {
   flex-wrap: wrap;
   align-items: center;
-}
-
-.buttons-container button:nth-child(2) {
-  margin-right: 38px;
-  margin-left: 38px;
+  margin-top: 40px;
+  width: 559px;
+  justify-content: space-between;
 }
 
 .buttons-container button:active {
@@ -252,24 +252,19 @@ p {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 330px));
+  grid-template-columns: repeat(3, minmax(calc(100% / 4), 330px));
+  column-gap: 20px;
   justify-content: space-between;
   row-gap: 55px;
 }
 
-.card {
-  min-height: 450px;
-  /* !!!!!!!!!!!!!! */
-}
-
 .card img {
-  min-height: 350px;
-  /* !!!!!!!!!!!!!! */
-  /* object-fit: cover; */
-  /* border-radius: 20px 20px 0px 0px; */
+  width: 100%;
+  height: 350px;
 }
 
 .card .texts {
+  min-height: 100px;
   height: 100%;
   border: 1px solid #E3E1D5;
   border-radius: 0px 0px 20px 20px;
