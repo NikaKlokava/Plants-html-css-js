@@ -58,3 +58,13 @@
 .about img {
   align-self: center;
 }
+/************************************************* prices *************************************************/
+
+.prices {
+  padding: 40px 50px 88px 50px;
+}
+.prices h2 {
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
