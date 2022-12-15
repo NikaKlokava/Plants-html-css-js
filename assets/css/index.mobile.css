@@ -1,3 +1,8 @@
+h2 {
+  font-size: 25px;
+  line-height: 33px;
+}
+
 /*********************************************** header **********************************************/
 .header-navbar {
   padding: 36px 25px;
@@ -29,7 +34,7 @@
   line-height: 35px;
 }
 
-.welcome button {
+.welcome .button {
   width: 100px;
   height: 34.14px;
   font-size: 10px;
@@ -47,6 +52,7 @@
 }
 
 .about h2 {
+  max-width: 100%;
   font-size: 25px;
   line-height: 33px;
 }
@@ -59,3 +65,23 @@
 }
 
 /************************************************* service *************************************************/
+.service-header h2 {
+  flex-basis: 187px;
+  margin-right: 0px;
+}
+
+.button {
+  width: 121px;
+  height: 35px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.buttons-container button:nth-child(2) {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.buttons-container button:nth-child(3) {
+  margin-top: 9px;
+}

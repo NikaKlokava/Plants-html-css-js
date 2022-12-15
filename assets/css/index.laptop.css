@@ -1,3 +1,8 @@
+h2 {
+  font-size: 35px;
+  line-height: 46px;
+}
+
 /*********************************************** header **********************************************/
 .header-navbar {
   padding: 35px 50px;
@@ -45,26 +50,37 @@
 
 .about h2 {
   align-self: center;
-  max-width: 423px;
   font-size: 35px;
   line-height: 46px;
   text-align: center;
 }
 
 .about p {
-  padding-bottom: 40px;
+  padding-top: 50px;
 }
 
 .about img {
   align-self: center;
+  margin-top: 65px;
 }
 
 /************************************************* service *************************************************/
 .service {
   padding: 60px 50px 70px 50px;
 }
+
+.service-header h2 {
+  flex-basis: 306px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+}
+
 .cards-container {
-  /* grid-template-columns: repeat(2, 280px); */
-  column-gap: 106px;
+  grid-template-columns: repeat(auto-fill, 280px);
   row-gap: 38px;
+}
+
+.card .texts {
+  padding-left: 39px;
+  padding-right: 39px;
 }
