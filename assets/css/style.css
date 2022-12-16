@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0px;
-
 }
 
 /**************************************** common styles *********************************************/
@@ -40,7 +39,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #000000;
+  color: #010201;
 }
 
 a {
@@ -73,18 +72,33 @@ p {
   color: #636060;
 }
 
+.button {
+  width: 160px;
+  height: 50px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  color: #E06733;
+  background: none;
+}
+
 /*********************************************** header **********************************************/
 .header-navbar {
   justify-content: space-between;
   align-items: center;
-  padding: 42px 110px;
+  padding: 42px 109px 42px 111px;
 }
 
 .navbar-items {
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: space-between;
-  column-gap: 46px;
+  column-gap: 47px;
 }
 
 .navbar-burger-item {
@@ -128,7 +142,7 @@ p {
 }
 
 .welcome>img {
-  max-height: 100%;
+  align-self: flex-start;
   max-width: 36.7%;
 }
 
@@ -145,7 +159,6 @@ p {
   line-height: 50px;
   margin: 0px;
   color: #717171;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .welcome span {
@@ -158,18 +171,14 @@ p {
   line-height: 35px;
 }
 
-.welcome button {
+.welcome .button {
   width: 158px;
   height: 44px;
   font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-  background: none;
   border: 2px solid #E06733;
   border-radius: 10px;
 }
@@ -183,11 +192,11 @@ p {
 /************************************************* about *************************************************/
 .about {
   justify-content: space-between;
-  padding: 94px 109px;
+  padding: 93px 109px 94px 109px;
 }
 
 .about h2 {
-  max-width: 463px;
+  max-width: 76.5%;
 }
 
 .about span {
@@ -200,7 +209,7 @@ p {
 }
 
 .about .text-content {
-  max-width: 605px;
+  max-width: 50%;
   align-self: center;
 }
 
@@ -212,10 +221,72 @@ p {
 /************************************************* service *************************************************/
 
 .service {
-  min-height: 1300px;
+  padding: 40px 109px 121px 109px;
 }
 
-/* prices */
+.service-header {
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  margin-top: -40px;
+}
+
+.service-header h2 {
+  flex-basis: 306px;
+  margin-right: 142px;
+  margin-top: 40px;
+}
+
+.buttons-container {
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+  width: 559px;
+  justify-content: space-between;
+}
+
+.buttons-container button:active {
+  color: #FFFFFF;
+  background: #E06733;
+  transition: 0.3s;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(calc(100% / 4), 330px));
+  column-gap: 20px;
+  justify-content: space-between;
+  row-gap: 55px;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+}
+
+.card .texts {
+  min-height: 100px;
+  height: 100%;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+}
+
+.card p:nth-child(1) {
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #E06733;
+}
+
+.card p:nth-child(2) {
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+}
+
+/************************************************* prices *************************************************/
+
 .prices {
   min-height: 560px;
 }
