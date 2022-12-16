@@ -85,3 +85,61 @@ h2 {
 .cards-container {
   grid-template-columns: 1fr;
 }
+
+/************************************************* prices *************************************************/
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 76px 40px 76px;
+}
+
+.price-item p {
+  font-size: 15px;
+}
+
+
+.call-us h2 {
+  font-size: 20px;
+}
+
+.prices>h2 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.price-items {
+  padding: 29px 22px;
+  align-self: stretch;
+}
+
+.price-item {
+  padding: 16px 15px 16px 30px;
+  justify-content: space-between;
+
+}
+
+
+.call-us {
+  align-items: center;
+}
+
+.call-us h2 {
+  text-align: center;
+  margin-top: 19px;
+}
+
+.call-us button {
+  width: 121px;
+  height: 35px;
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+
+.call-us img {
+  display: none;
+}
