@@ -385,12 +385,15 @@ p {
   margin-top: 7px;
   margin-left: 45px;
 }
+
 .contacts-woman {
   width: 32.7%;
 }
+
 .contacts-container-wrapper {
   width: 36.8%;
 }
+
 .contacts .contacts-container {
   height: 50px;
   justify-content: space-between;
@@ -423,6 +426,7 @@ p {
   border: 1px solid #D6E7D2;
   box-shadow: none;
 }
+
 /* .city-container */
 .city-container {
   display: grid;
@@ -433,15 +437,17 @@ p {
   background: #EDF2EC;
   border: 1px solid #000000;
   border-radius: 20px;
-  display: none; /*****************/
+  display: none;
+  /*****************/
 }
 
 .city-container p {
-font-size: 16px;
-line-height: 40px;
-letter-spacing: 0.05em;
-color: #000000;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
+
 .city-container .grey {
   color: #717171;
 }
@@ -459,5 +465,39 @@ color: #000000;
 /************************************************* footer *************************************************/
 
 footer {
-  min-height: 130px;
+  padding: 40px 109px;
+  justify-content: space-between;
+}
+
+.footer-data {
+  width: 169px;
+  justify-content: space-between;
+}
+
+.footer-data>* {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.footer-rsschool {
+  font-family: 'Inter';
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.social-links {
+  width: 188px;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.social-links a {
+  align-items: center;
+}
+.social-links img {
+  width: 32px;
+  height: 32px;
 }

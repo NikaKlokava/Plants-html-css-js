@@ -139,6 +139,7 @@ h2 {
 .contacts .contacts-container {
   margin-top: 100px;
 }
+
 .contacts-container-wrapper {
   width: 100%;
   min-height: 325px;
@@ -150,4 +151,32 @@ h2 {
   margin-left: 20px;
   width: 200px;
   height: 248.49px;
+}
+
+/************************************************* footer *************************************************/
+
+footer {
+  padding: 33px 109px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-data>* {
+  line-height: 24px;
+}
+
+.footer-rsschool {
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  width: 188px;
+  justify-content: space-between;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
 }
