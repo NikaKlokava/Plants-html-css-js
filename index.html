@@ -38,84 +38,106 @@
   </header>
   <main>
     <section class="welcome flex-row" id="home">
-      <img src="assets/img/leafs.png" alt="leafs">
-      <div class="text-content flex-column">
-        <h1>We grow <span>plants</span> and give you oxygen</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+      <img class="welcome-image" src="assets/img/leafs.png" alt="leafs">
+      <div class="welcome-content flex-column">
+        <h1 class="welcome-header">We grow <span class="welcome-header-highlight">plants</span> and give you oxygen</h1>
+        <p class="welcome-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+          has been the
           industry's
           standard dummy text ever since the 1500s.</p>
-        <button class="button">learn more</button>
+        <button class="button welcome-button">learn more</button>
       </div>
     </section>
     <section class="about flex-row" id="about-us">
-      <div class="text-content">
-        <h2>We are <span>professional experienced</span> gardeners</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+      <div class="about-content">
+        <h2 class="about-header">We are <span class="about-header-highlight">professional experienced</span> gardeners
+        </h2>
+        <p class="about-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+          been the
           industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make
           a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged. </p>
       </div>
-      <img src="assets/img/houseplant.png" alt="houseplant">
+      <img class="about-image" src="assets/img/houseplant.png" alt="houseplant">
     </section>
     <section class="service" id="service">
-      <div class="service-header flex-row">
-        <h2>Service and our projects</h2>
-        <div class="buttons-container flex-row">
-          <button class="button">Gardens</button>
-          <button class="button">lawn</button>
-          <button class="button">Planting</button>
+      <div class="service-header-container flex-row">
+        <h2 class="service-header">Service and our projects</h2>
+        <div class="service-buttons flex-row">
+          <button class="button service-button">Gardens</button>
+          <button class="button service-button">lawn</button>
+          <button class="button service-button">Planting</button>
         </div>
       </div>
-      <div class="cards-container">
-        <div class="card flex-column">
-          <img src="assets/img/card_1.png" alt="garden-care">
-          <div class="texts">
+      <div class="service-cards-container">
+        <div class="service-card flex-column">
+          <img class="service-card-image" src="assets/img/card_1.png" alt="garden-care">
+          <div class="service-card-texts">
             <p>Garden care</p>
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </div>
-        <div class="card flex-column">
-          <img src="assets/img/card_2.png" alt="planting">
-          <div class="texts">
+        <div class="service-card flex-column">
+          <img class="service-card-image" src="assets/img/card_2.png" alt="planting">
+          <div class="service-card-texts">
             <p>Planting</p>
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </div>
-        <div class="card flex-column">
-          <img src="assets/img/card_3.png" alt="lawn-care">
-          <div class="texts">
+        <div class="service-card flex-column">
+          <img class="service-card-image" src="assets/img/card_3.png" alt="lawn-care">
+          <div class="service-card-texts">
             <p>Lawn care</p>
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </div>
-        <div class="card flex-column">
-          <img src="assets/img/card_4.png" alt="planting-2">
-          <div class="texts">
+        <div class="service-card flex-column">
+          <img class="service-card-image" src="assets/img/card_4.png" alt="planting-2">
+          <div class="service-card-texts">
             <p>Planting</p>
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </div>
-        <div class="card flex-column">
-          <img src="assets/img/card_5.png">
-          <div class="texts">
+        <div class="service-card flex-column">
+          <img class="service-card-image" src="assets/img/card_5.png">
+          <div class="service-card-texts">
             <p>Garden care</p>
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </div>
-        <div class="card flex-column">
-          <img src="assets/img/card_6.png" alt="planting-3">
-          <div class="texts">
+        <div class="service-card flex-column">
+          <img class="service-card-image" src="assets/img/card_6.png" alt="planting-3">
+          <div class="service-card-texts">
             <p>Planting</p>
             <p>Lorem Ipsum has been the industry</p>
           </div>
         </div>
-
       </div>
     </section>
-    <section class="prices" id="price">
-      <h2></h2>
+    <section class="prices flex-row" id="price">
+      <h2 class="prices-header">Prices</h2>
+      <div class="prices-items">
+        <div class="price-item flex-row">
+          <p class="price-item-name">Basics</p>
+          <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
+        </div>
+        <div class="price-item flex-row">
+          <p class="price-item-name">Standard</p>
+          <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
+        </div>
+        <div class="price-item flex-row">
+          <p class="price-item-name">Pro care</p>
+          <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
+        </div>
+      </div>
+      <div class="prices-call-us flex-column">
+        <h2 class="prices-call-us-header">Our best <span class="prices-call-us-highlight">gardeners</span> are ready to
+          help you</h2>
+        <button class="button prices-call-us-button">Contact us</button>
+        <img class="prices-call-us-image" src="assets/img/leafs_small.png" alt="leafs">
+      </div>
     </section>
     <section class="contacts" id="contacts">
       <h2></h2>

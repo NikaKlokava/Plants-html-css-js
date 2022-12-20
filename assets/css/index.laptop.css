@@ -14,24 +14,24 @@ h2 {
   padding: 40px 50px 70px 50px;
 }
 
-.welcome .text-content {
+.welcome .welcome-content {
   max-width: 52%;
 }
 
-.welcome>img {
+.welcome>.welcome-image {
   max-width: 42%;
   max-height: 254px;
   order: 1;
 }
 
-.welcome p {
+.welcome .welcome-body {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 25px;
 }
 
-.welcome h1 {
+.welcome .welcome-header {
   font-size: 35px;
   text-shadow: none;
 }
@@ -42,24 +42,24 @@ h2 {
   padding: 40px 50px 95px 50px;
 }
 
-.about .text-content {
+.about .about-content {
   max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.about h2 {
+.about .about-header {
   align-self: center;
   font-size: 35px;
   line-height: 46px;
   text-align: center;
 }
 
-.about p {
+.about .about-body {
   padding-top: 50px;
 }
 
-.about img {
+.about .about-image {
   align-self: center;
   margin-top: 65px;
 }
@@ -69,24 +69,54 @@ h2 {
   padding: 60px 50px 70px 50px;
 }
 
-.service-header h2 {
+.service .service-header-container .service-header {
   flex-basis: 306px;
   margin-right: 0px;
 }
 
-.buttons-container {
+.service .service-buttons {
   margin-top: 35px;
   max-width: 559px;
   width: 100%;
 }
 
-.cards-container {
+.service .service-cards-container {
   grid-template-columns: repeat(2, minmax(calc(100% / 3), 280px));
   column-gap: 15px;
   row-gap: 38px;
 }
 
-.card .texts {
+.service .service-card>.service-card-texts {
   padding-left: 39px;
   padding-right: 39px;
+}
+
+/************************************************* prices *************************************************/
+
+.prices {
+  grid-template-columns: minmax(150px, 332px) minmax(150px, 296px);
+  padding: 40px 50px 88px 50px;
+}
+
+.prices>.prices-header {
+  grid-column: 1 / 3;
+  width: 135px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 57px;
+}
+
+.prices .prices-call-us {
+  grid-row: 2 / 3;
+}
+
+.prices .prices-call-us .prices-call-us-header {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.prices .prices-call-us .prices-call-us-button {
+  margin-top: 28px;
+  margin-bottom: 33px;
 }

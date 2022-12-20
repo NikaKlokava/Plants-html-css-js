@@ -14,27 +14,27 @@ h2 {
   padding: 24px 25px;
 }
 
-.welcome .text-content {
+.welcome>.welcome-content {
   max-width: 100%;
 }
 
-.welcome>img {
+.welcome>.welcome-image {
   display: none;
 }
 
-.welcome p {
+.welcome .welcome-body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 16px;
   line-height: 25px;
 }
 
-.welcome h1 {
+.welcome .welcome-header {
   font-size: 25px;
   line-height: 35px;
 }
 
-.welcome .button {
+.welcome .welcome-button {
   width: 100px;
   height: 34.14px;
   font-size: 10px;
@@ -45,19 +45,19 @@ h2 {
   padding: 30px 25px;
 }
 
-.about .text-content {
+.about .about-content {
   max-width: 100%;
   height: 100%;
 
 }
 
-.about h2 {
+.about .about-header {
   max-width: 100%;
   font-size: 25px;
   line-height: 33px;
 }
 
-.about p {
+.about .about-body {
   font-size: 15px;
   line-height: 25px;
   padding-top: 20px;
@@ -65,16 +65,16 @@ h2 {
 }
 
 /************************************************* service *************************************************/
-.service-header h2 {
+.service .service-header-container .service-header {
   flex-basis: 187px;
   margin-right: 0px;
 }
 
-.buttons-container {
+.service .service-buttons {
   max-width: 252px;
 }
 
-.button {
+.service .service-buttons>.service-button {
   width: 121px;
   height: 35px;
   font-size: 15px;
@@ -82,6 +82,59 @@ h2 {
   margin-bottom: 9px;
 }
 
-.cards-container {
+.service .service-cards-container {
   grid-template-columns: 1fr;
+}
+
+/************************************************* prices *************************************************/
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 76px 40px 76px;
+}
+
+.prices>.prices-header {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.prices .prices-items {
+  padding: 29px 22px;
+  align-self: stretch;
+}
+
+.prices .price-item {
+  padding: 16px 15px 16px 30px;
+  justify-content: space-between;
+}
+
+.prices .price-item>.price-item-name {
+  font-size: 15px;
+}
+
+.prices .prices-call-us {
+  align-items: center;
+}
+
+.prices .prices-call-us .prices-call-us-header {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.prices .prices-call-us .prices-call-us-button {
+  width: 121px;
+  height: 35px;
+  font-size: 15px;
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+
+.prices .prices-call-us .prices-call-us-image {
+  display: none;
 }
