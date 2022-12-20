@@ -120,3 +120,34 @@ h2 {
   margin-top: 28px;
   margin-bottom: 33px;
 }
+
+/************************************************* contacts *************************************************/
+
+.contacts {
+  padding: 40px 159px 0px 159px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts .contacts-header {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.contacts .contacts-container {
+  margin-top: 100px;
+}
+.contacts-container-wrapper {
+  width: 100%;
+  min-height: 325px;
+  margin-bottom: 75px;
+}
+
+.contacts .contacts-woman {
+  order: 1;
+  margin-left: 20px;
+  width: 200px;
+  height: 248.49px;
+}
