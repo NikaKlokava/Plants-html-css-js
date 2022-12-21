@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/index.laptop.css">
   <link rel="stylesheet" media="screen and (max-width: 380px)" href="assets/css/index.mobile.css">
   <script src="index.js"></script>
@@ -15,18 +16,21 @@
 
 <body>
   <header>
-    <div class="header-navbar flex-row">
+    <div class="header-container flex-row">
       <div class="logo flex-row">
         <img src="assets/svg/logo_plant.svg" alt="logo-plant">
         <h3>Plants</h3>
       </div>
+      <div class="navbar-burger-item">
+        <a class="navbar-burger-icon flex-column" href="javascript:void(0);" onclick="handleBurgerClick()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+      </div>
       <nav class="navbar" id="navbar">
         <ul class="navbar-items">
-          <li class="navbar-burger-item">
-            <a class="navbar-burger-icon" href="javascript:void(0);" onclick="handleBurgerClick()">
-              <img src="assets/svg/burger.svg" alt="burger">
-            </a>
-          </li>
           <li class="navbar-item"><a class="navbar-link" href="#home">Home</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#about-us">About us</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#service">Service</a></li>
@@ -194,10 +198,14 @@
     </div>
     <a class="footer-rsschool" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
     <ul class="social-links flex-row">
-      <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/instagram.svg" alt="instagram"></a></li>
-      <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/facebook.svg" alt="facebook"></a></li>
-      <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/twitter.svg" alt="twitter"></a></li>
-      <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/pinterest.svg" alt="pinterest"></a></li>
+      <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/instagram.svg"
+            alt="instagram"></a></li>
+      <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/facebook.svg"
+            alt="facebook"></a></li>
+      <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/twitter.svg"
+            alt="twitter"></a></li>
+      <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/pinterest.svg"
+            alt="pinterest"></a></li>
     </ul>
   </footer>
 </body>
