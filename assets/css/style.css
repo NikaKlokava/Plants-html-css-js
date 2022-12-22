@@ -91,53 +91,6 @@ p {
   background: none;
 }
 
-/*********************************************** header **********************************************/
-.header-navbar {
-  justify-content: space-between;
-  align-items: center;
-  padding: 42px 109px 42px 111px;
-}
-
-.navbar-items {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  justify-content: space-between;
-  column-gap: 47px;
-}
-
-.navbar-burger-item {
-  display: none;
-}
-
-@media screen and (max-width: 650px) {
-  .navbar-items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 1.7em;
-    right: 3em;
-  }
-
-  .navbar-item {
-    display: none;
-  }
-
-  .navbar-burger-item {
-    display: block;
-    width: 40px;
-  }
-
-  .navbar-link {
-    width: 100%;
-  }
-
-  .navbar.burgerView .navbar-item {
-    display: block;
-    padding-top: 20px;
-  }
-}
-
 
 /************************************************* welcome *************************************************/
 .welcome {
