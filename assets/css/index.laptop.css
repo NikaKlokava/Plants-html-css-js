@@ -3,33 +3,6 @@ h2 {
   line-height: 46px;
 }
 
-/************************************************* welcome *************************************************/
-.welcome {
-  padding: 40px 50px 70px 50px;
-}
-
-.welcome .welcome-content {
-  max-width: 52%;
-}
-
-.welcome>.welcome-image {
-  max-width: 42%;
-  max-height: 254px;
-  order: 1;
-}
-
-.welcome .welcome-body {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-.welcome .welcome-header {
-  font-size: 35px;
-  text-shadow: none;
-}
-
 /************************************************* about *************************************************/
 .about {
   flex-direction: column;
