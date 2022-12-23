@@ -3,34 +3,6 @@ h2 {
   line-height: 46px;
 }
 
-/************************************************* about *************************************************/
-.about {
-  flex-direction: column;
-  padding: 40px 50px 95px 50px;
-}
-
-.about .about-content {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.about .about-header {
-  align-self: center;
-  font-size: 35px;
-  line-height: 46px;
-  text-align: center;
-}
-
-.about .about-body {
-  padding-top: 50px;
-}
-
-.about .about-image {
-  align-self: center;
-  margin-top: 65px;
-}
-
 /************************************************* service *************************************************/
 .service {
   padding: 60px 50px 70px 50px;
