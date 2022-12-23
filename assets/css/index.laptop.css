@@ -3,33 +3,6 @@ h2 {
   line-height: 46px;
 }
 
-/************************************************* service *************************************************/
-.service {
-  padding: 60px 50px 70px 50px;
-}
-
-.service .service-header-container .service-header {
-  flex-basis: 306px;
-  margin-right: 0px;
-}
-
-.service .service-buttons {
-  margin-top: 35px;
-  max-width: 559px;
-  width: 100%;
-}
-
-.service .service-cards-container {
-  grid-template-columns: repeat(2, minmax(calc(100% / 3), 280px));
-  column-gap: 15px;
-  row-gap: 38px;
-}
-
-.service .service-card>.service-card-texts {
-  padding-left: 39px;
-  padding-right: 39px;
-}
-
 /************************************************* prices *************************************************/
 
 .prices {

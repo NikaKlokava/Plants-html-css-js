@@ -3,28 +3,6 @@ h2 {
   line-height: 33px;
 }
 
-/************************************************* service *************************************************/
-.service .service-header-container .service-header {
-  flex-basis: 187px;
-  margin-right: 0px;
-}
-
-.service .service-buttons {
-  max-width: 252px;
-}
-
-.service .service-buttons>.service-button {
-  width: 121px;
-  height: 35px;
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 9px;
-}
-
-.service .service-cards-container {
-  grid-template-columns: 1fr;
-}
-
 /************************************************* prices *************************************************/
 
 .prices {
