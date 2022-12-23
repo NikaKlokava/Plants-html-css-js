@@ -91,35 +91,6 @@ p {
   background: none;
 }
 
-/************************************************* about *************************************************/
-.about {
-  justify-content: space-between;
-  padding: 93px 109px 94px 109px;
-}
-
-.about .about-header {
-  max-width: 76.5%;
-}
-
-.about .about-header-highlight {
-  color: #E06733;
-}
-
-.about .about-body {
-  line-height: 30px;
-  padding-top: 40px;
-}
-
-.about .about-content {
-  max-width: 50%;
-  align-self: center;
-}
-
-.about .about-image {
-  align-self: center;
-  width: 38%;
-}
-
 /************************************************* service *************************************************/
 
 .service {
