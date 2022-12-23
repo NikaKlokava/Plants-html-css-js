@@ -1,6 +1,6 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -89,61 +89,6 @@ p {
   border-radius: 5px;
   color: #E06733;
   background: none;
-}
-
-
-/************************************************* welcome *************************************************/
-.welcome {
-  justify-content: space-between;
-  padding: 62px 109px;
-}
-
-.welcome>.welcome-image {
-  align-self: flex-start;
-  max-width: 36.7%;
-}
-
-.welcome>.welcome-content {
-  max-width: 549px;
-  align-self: center;
-}
-
-.welcome .welcome-header {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 50px;
-  margin: 0px;
-  color: #717171;
-}
-
-.welcome .welcome-header-highlight {
-  color: #499A18;
-}
-
-.welcome .welcome-body {
-  padding-top: 42px;
-  padding-bottom: 48px;
-  line-height: 35px;
-}
-
-.welcome .welcome-button {
-  width: 158px;
-  height: 44px;
-  font-family: 'Inter';
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  border: 2px solid #E06733;
-  border-radius: 10px;
-}
-
-.welcome .welcome-button:hover {
-  color: #FFFFFF;
-  background: #E06733;
-  transition: 0.3s;
 }
 
 /************************************************* about *************************************************/
