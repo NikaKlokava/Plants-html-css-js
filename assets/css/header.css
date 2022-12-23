@@ -20,7 +20,7 @@
 }
 
 .navbar-burger-icon .line {
-  width: 38px;
+  width: 40px;
   height: 0px;
   border: 1px solid #717171;
   margin-bottom: 6px;
@@ -75,6 +75,6 @@
 
 @media screen and (max-width: 380px) {
   .header-container {
-    padding: 36px 25px;
+    padding: 34px 25px;
   }
 }

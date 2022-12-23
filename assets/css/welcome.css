@@ -6,9 +6,6 @@
 .welcome-image {
   align-self: flex-start;
   max-width: 36.73%;
-  /* max-height: 407.36px; */
-  /* object-fit: none; */
-  /* object-fit: cover; */
 }
 
 .welcome-content {
@@ -56,7 +53,7 @@
 
 @media screen and (max-width:768px) {
   .welcome {
-    padding: 40px 50px 70px 50px;
+    padding: 37px 50px 70px 50px;
   }
 
   .welcome-content {
@@ -75,10 +72,43 @@
 
   .welcome-body {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
     padding-left: 5px;
     font-size: 16px;
     line-height: 25px;
   }
 
+}
+
+@media screen and (max-width:380px) {
+  .welcome {
+    padding: 22px 25px 24px 25px;
+  }
+
+  .welcome-content {
+    max-width: 100%;
+  }
+
+  .welcome-image {
+    display: none;
+  }
+
+  .welcome-body {
+    padding-top: 20px;
+    padding-bottom: 26px;
+    padding-left: 0px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .welcome-header {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .welcome-button {
+    width: 100px;
+    height: 34.14px;
+    font-size: 10px;
+  }
 }
