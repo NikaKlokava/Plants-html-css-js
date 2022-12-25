@@ -2,59 +2,6 @@ h2 {
   font-size: 25px;
   line-height: 33px;
 }
-
-/************************************************* prices *************************************************/
-
-.prices {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 25px 76px 40px 76px;
-}
-
-.prices>.prices-header {
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 40px;
-}
-
-.prices .prices-items {
-  padding: 29px 22px;
-  align-self: stretch;
-}
-
-.prices .price-item {
-  padding: 16px 15px 16px 30px;
-  justify-content: space-between;
-}
-
-.prices .price-item>.price-item-name {
-  font-size: 15px;
-}
-
-.prices .prices-call-us {
-  align-items: center;
-}
-
-.prices .prices-call-us .prices-call-us-header {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 19px;
-}
-
-.prices .prices-call-us .prices-call-us-button {
-  width: 121px;
-  height: 35px;
-  font-size: 15px;
-  margin-top: 14px;
-  margin-bottom: 0px;
-}
-
-.prices .prices-call-us .prices-call-us-image {
-  display: none;
-}
 /************************************************* contacts *************************************************/
 
 .contacts {
