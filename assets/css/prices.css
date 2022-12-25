@@ -16,7 +16,7 @@
 
 .prices .prices-items {
   align-self: flex-start;
-  padding: 34px 40px calc(34px - 32px) 40px;
+  padding: 34px 40px 0px 40px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
