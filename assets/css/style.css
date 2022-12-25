@@ -91,42 +91,16 @@ p {
   background: none;
 }
 
-/************************************************* footer *************************************************/
-
-footer {
-  padding: 40px 109px;
-  justify-content: space-between;
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 35px;
+    line-height: 46px;
+  }
 }
 
-.footer-data {
-  width: 169px;
-  justify-content: space-between;
-}
-
-.footer-data>* {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 50px;
-  color: #000000;
-}
-
-.footer-rsschool {
-  font-family: 'Inter';
-  font-size: 20px;
-  margin-left: 15px;
-}
-
-.social-links {
-  width: 188px;
-  justify-content: space-between;
-  /* align-items: center; */
-}
-.social-links a {
-  align-items: center;
-}
-.social-links img {
-  width: 32px;
-  height: 32px;
+@media screen and (max-width:380px) {
+  h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
 }
