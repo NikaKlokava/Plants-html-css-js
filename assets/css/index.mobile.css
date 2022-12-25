@@ -2,32 +2,7 @@ h2 {
   font-size: 25px;
   line-height: 33px;
 }
-/************************************************* contacts *************************************************/
 
-.contacts {
-  padding: 25px 42px 0px 42px;
-}
-
-.contacts .contacts-header {
-  font-size: 25px;
-  line-height: 33px;
-}
-
-.contacts-container-wrapper {
-  min-height: 263px;
-  margin-bottom: 0px;
-}
-.contacts .contacts-container {
-  margin-top: 80px;
-  padding-right: 20px;
-  background: #D6E7D2;
-}
-
-.contacts .contacts-woman {
-  margin-left: 0px;
-  width: 100px;
-  height: 124.25px;
-}
 /************************************************* footer *************************************************/
 
 footer {
