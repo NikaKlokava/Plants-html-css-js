@@ -21,6 +21,15 @@
   width: 559px;
   justify-content: space-between;
 }
+.service-buttons .service-button:nth-child(1),
+.service-buttons .service-button:nth-child(3) {
+ padding-left: 2px;
+}
+.service-button:hover {
+  text-shadow: 0px 1px 5px #E06733;
+  cursor:pointer;
+  transition: 0.5s;
+}
 
 .service-button:active {
   color: #FFFFFF;
@@ -134,6 +143,10 @@
     line-height: 20px;
     margin-bottom: 9px;
   }
+  .service-buttons .service-button:nth-child(1),
+.service-buttons .service-button:nth-child(3) {
+ padding-left: 5px;
+}
 
   .service .service-cards-container {
     grid-template-columns: 1fr;

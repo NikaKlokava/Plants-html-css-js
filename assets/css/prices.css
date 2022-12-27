@@ -30,6 +30,10 @@
   flex-wrap: wrap;
   margin-bottom: 32px;
 }
+.price-item:hover {
+  box-shadow: 2px 2px 10px #4a9a1874;
+  transition: 0.3s;
+}
 
 .prices .price-item>.price-item-name {
   font-weight: 700;
@@ -62,6 +66,12 @@
   padding-left: 3px;
   margin-top: 40px;
   margin-bottom: 39px;
+}
+
+.prices .prices-call-us .prices-call-us-button:hover {
+  color: #FFFFFF;
+  background: #E06733;
+  transition: 0.3s;
 }
 
 .prices .prices-call-us .prices-call-us-image {

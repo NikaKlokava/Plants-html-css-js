@@ -48,6 +48,7 @@
 .welcome-button:hover {
   color: #FFFFFF;
   background: #E06733;
+  cursor:context-menu;
   transition: 0.3s;
 }
 
