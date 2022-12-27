@@ -8,14 +8,35 @@ html {
 
 body {
   margin: 0px;
+  padding-top: 134px;
 }
-
+@media screen and (max-width:768px) {
+  body {
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width:650px) {
+  body {
+    padding-top: 102px;
+  }
+}
+@media screen and (max-width:380px) {
+  body {
+    padding-top: 100px;
+  }
+}
 /**************************************** common styles *********************************************/
 header,
 .welcome,
 .service,
 .contacts {
   background: #EDF2EC;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .flex-column {
