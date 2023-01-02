@@ -1,7 +1,11 @@
 .service {
-  padding: 40px 115px 121px 103px;
+  width: 100%;
 }
-
+.service-container {
+  max-width: 1440px;
+  padding: 40px 115px 121px 103px;
+  margin: 0 auto;
+}
 .service-header-container {
   flex-wrap: wrap;
   margin-bottom: 80px;
@@ -20,6 +24,15 @@
   margin-top: 42px;
   width: 559px;
   justify-content: space-between;
+}
+.service-buttons .service-button:nth-child(1),
+.service-buttons .service-button:nth-child(3) {
+ padding-left: 2px;
+}
+.service-button:hover {
+  text-shadow: 0px 1px 5px #E06733;
+  cursor:pointer;
+  transition: 0.5s;
 }
 
 .service-button:active {
@@ -69,7 +82,7 @@
 }
 
 @media screen and (max-width:768px) {
-  .service {
+  .service-container {
     padding: 60px 50px 70px 50px;
   }
 
@@ -109,7 +122,7 @@
 }
 
 @media screen and (max-width:380px) {
-  .service {
+  .service-container {
     padding: 30px 50px 27px 25px;
   }
 
@@ -134,6 +147,10 @@
     line-height: 20px;
     margin-bottom: 9px;
   }
+  .service-buttons .service-button:nth-child(1),
+.service-buttons .service-button:nth-child(3) {
+ padding-left: 5px;
+}
 
   .service .service-cards-container {
     grid-template-columns: 1fr;

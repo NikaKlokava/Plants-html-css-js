@@ -1,8 +1,12 @@
 .welcome {
+  width: 100%;
+}
+.welcome-container {
+  max-width: 1440px;
   justify-content: space-between;
   padding: 62px 109px 58px 109px;
+  margin: 0 auto;
 }
-
 .welcome-image {
   align-self: flex-start;
   max-width: 36.73%;
@@ -48,11 +52,12 @@
 .welcome-button:hover {
   color: #FFFFFF;
   background: #E06733;
+  cursor:context-menu;
   transition: 0.3s;
 }
 
 @media screen and (max-width:768px) {
-  .welcome {
+  .welcome-container {
     padding: 37px 50px 70px 50px;
   }
 
@@ -81,7 +86,7 @@
 }
 
 @media screen and (max-width:380px) {
-  .welcome {
+  .welcome-container  {
     padding: 22px 25px 24px 25px;
   }
 
