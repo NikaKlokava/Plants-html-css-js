@@ -1,8 +1,12 @@
 .about {
+  width: 100%;
+}
+.about-container {
+  max-width: 1440px;
   justify-content: space-between;
   padding: 93px 109px 94px 109px;
+  margin: 0 auto;
 }
-
 .about-header {
   max-width: 76.5%;
   margin-top: 10px;
@@ -29,7 +33,7 @@
 
 
 @media screen and (max-width:768px) {
-  .about {
+  .about-container {
     flex-direction: column;
     padding: 40px 50px 95px 50px;
   }
@@ -60,7 +64,7 @@
 }
 
 @media screen and (max-width:380px) {
-  .about {
+  .about-container {
     padding: 30px 25px 27px 25px;
   }
 

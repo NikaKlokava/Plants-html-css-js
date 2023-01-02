@@ -1,5 +1,7 @@
 .header-container {
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0px auto;
   padding: 42px 109px 42px 111px;
   transition: 0.3s;
 }
@@ -77,17 +79,17 @@
     transition: max-height 1.5s ease-in-out;
   }
 
-  .crossLine:nth-child(1),
-  .crossLine:nth-child(4) {
+  .burgerView .line:nth-child(1),
+  .burgerView .line:nth-child(4) {
     height: 0px;
   }
 
-  .crossLine:nth-child(2) {
+  .burgerView .line:nth-child(2) {
     transform: rotateZ(40deg) scaleX(0.95) translate(5px, 5px);
     transition: 0.5s;
   }
 
-  .crossLine:nth-child(3) {
+  .burgerView .line:nth-child(3) {
     transform: rotateZ(-40deg) scaleX(0.95) translate(2px, -1px);
     transition: 0.5s;
   }

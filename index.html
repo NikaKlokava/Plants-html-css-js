@@ -8,30 +8,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/header.css">
-  <link rel="stylesheet" href="assets/css/welcome.css">
-  <link rel="stylesheet" href="assets/css/about.css">
-  <link rel="stylesheet" href="assets/css/service.css">
-  <link rel="stylesheet" href="assets/css/prices.css">
-  <link rel="stylesheet" href="assets/css/contacts.css">
-  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/index.css">
   <script src="index.js"></script>
 </head>
 
-<body id="home">
-  <header>
-    <div class="header-container flex-row"id="header-container">
+<body>
+  <header id="home">
+    <div class="header-container flex-row" id="header-container">
       <div class="logo flex-row">
         <img src="assets/svg/logo_plant.svg" alt="logo-plant">
         <h3>Plants</h3>
       </div>
-      <div class="navbar-burger-item">
-        <a class="navbar-burger-icon flex-column" href="javascript:void(0);" onclick="handleBurgerClick()">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+      <div class="navbar-burger-item" id="navbar-burger-item">
+        <a class="navbar-burger-icon flex-column" href="javascript:void(0);" id="navbar-burger-icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </a>
       </div>
       <nav class="navbar" id="navbar">
@@ -46,172 +39,188 @@
     </div>
   </header>
   <main>
-    <section class="welcome flex-row" >
-      <img class="welcome-image" src="assets/img/leafs.png" alt="leafs">
-      <div class="welcome-content flex-column">
-        <h1 class="welcome-header">We grow <span class="welcome-header-highlight">plants</span> and give you oxygen</h1>
-        <p class="welcome-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the
-          industry's
-          standard dummy text ever since the 1500s.</p>
-        <button class="button welcome-button">learn more</button>
+    <section class="welcome">
+      <div class="welcome-container flex-row">
+        <img class="welcome-image" src="assets/img/leafs.png" alt="leafs">
+        <div class="welcome-content flex-column">
+          <h1 class="welcome-header">We grow <span class="welcome-header-highlight">plants</span> and give you oxygen
+          </h1>
+          <p class="welcome-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the
+            industry's
+            standard dummy text ever since the 1500s.</p>
+          <button class="button welcome-button">learn more</button>
+        </div>
       </div>
     </section>
-    <section class="about flex-row" id="about-us">
-      <div class="about-content">
-        <h2 class="about-header">We are <span class="about-header-highlight">professional experienced</span> gardeners
-        </h2>
-        <p class="about-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the
-          industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make
-          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. </p>
+    <section class="about" id="about-us">
+      <div class="about-container flex-row">
+        <div class="about-content">
+          <h2 class="about-header">We are <span class="about-header-highlight">professional experienced</span> gardeners
+          </h2>
+          <p class="about-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has
+            been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. </p>
+        </div>
+        <img class="about-image" src="assets/img/houseplant.png" alt="houseplant">
       </div>
-      <img class="about-image" src="assets/img/houseplant.png" alt="houseplant">
     </section>
     <section class="service" id="service">
-      <div class="service-header-container flex-row">
-        <h2 class="service-header">Service and our projects</h2>
-        <div class="service-buttons flex-row">
-          <button class="button service-button">Gardens</button>
-          <button class="button service-button">Lawn</button>
-          <button class="button service-button">Planting</button>
+      <div class="service-container">
+        <div class="service-header-container flex-row">
+          <h2 class="service-header">Service and our projects</h2>
+          <div class="service-buttons flex-row">
+            <button class="button service-button">Gardens</button>
+            <button class="button service-button">Lawn</button>
+            <button class="button service-button">Planting</button>
+          </div>
+        </div>
+        <div class="service-cards-container">
+          <div class="service-card flex-column">
+            <img class="service-card-image" src="assets/img/card_1.png" alt="garden-care">
+            <div class="service-card-texts">
+              <p>Garden care</p>
+              <p>Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="service-card flex-column">
+            <img class="service-card-image" src="assets/img/card_2.png" alt="planting">
+            <div class="service-card-texts">
+              <p class="fix-figma-issue">Planting</p>
+              <p>Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="service-card flex-column">
+            <img class="service-card-image" src="assets/img/card_3.png" alt="lawn-care">
+            <div class="service-card-texts">
+              <p>Lawn care</p>
+              <p>Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="service-card flex-column">
+            <img class="service-card-image" src="assets/img/card_4.png" alt="planting-2">
+            <div class="service-card-texts">
+              <p class="fix-figma-issue">Planting</p>
+              <p>Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="service-card flex-column">
+            <img class="service-card-image" src="assets/img/card_5.png" alt="garden-care">
+            <div class="service-card-texts">
+              <p>Garden care</p>
+              <p>Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="service-card flex-column">
+            <img class="service-card-image" src="assets/img/card_6.png" alt="planting-3">
+            <div class="service-card-texts">
+              <p class="fix-figma-issue">Planting</p>
+              <p>Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="service-cards-container">
-        <div class="service-card flex-column">
-          <img class="service-card-image" src="assets/img/card_1.png" alt="garden-care">
-          <div class="service-card-texts">
-            <p>Garden care</p>
-            <p>Lorem Ipsum has been the industry</p>
+    </section>
+    <section class="prices" id="price">
+      <div class="prices-container">
+        <h2 class="prices-header">Prices</h2>
+        <div class="prices-items">
+          <div class="price-item flex-row">
+            <p class="price-item-name">Basics</p>
+            <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
+          </div>
+          <div class="price-item flex-row">
+            <p class="price-item-name">Standard</p>
+            <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
+          </div>
+          <div class="price-item flex-row">
+            <p class="price-item-name">Pro care</p>
+            <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
           </div>
         </div>
-        <div class="service-card flex-column">
-          <img class="service-card-image" src="assets/img/card_2.png" alt="planting">
-          <div class="service-card-texts">
-            <p class="fix-figma-issue">Planting</p>
-            <p>Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="service-card flex-column">
-          <img class="service-card-image" src="assets/img/card_3.png" alt="lawn-care">
-          <div class="service-card-texts">
-            <p>Lawn care</p>
-            <p>Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="service-card flex-column">
-          <img class="service-card-image" src="assets/img/card_4.png" alt="planting-2">
-          <div class="service-card-texts">
-            <p class="fix-figma-issue">Planting</p>
-            <p>Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="service-card flex-column">
-          <img class="service-card-image" src="assets/img/card_5.png" alt="garden-care">
-          <div class="service-card-texts">
-            <p>Garden care</p>
-            <p>Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="service-card flex-column">
-          <img class="service-card-image" src="assets/img/card_6.png" alt="planting-3">
-          <div class="service-card-texts">
-            <p class="fix-figma-issue">Planting</p>
-            <p>Lorem Ipsum has been the industry</p>
-          </div>
+        <div class="prices-call-us flex-column">
+          <h2 class="prices-call-us-header">Our best <span class="prices-call-us-highlight">gardeners</span> are ready
+            to
+            help you</h2>
+          <button class="button prices-call-us-button">Contact us</button>
+          <img class="prices-call-us-image" src="assets/img/leafs_small.png" alt="leafs">
         </div>
       </div>
     </section>
-    <section class="prices flex-row" id="price">
-      <h2 class="prices-header">Prices</h2>
-      <div class="prices-items">
-        <div class="price-item flex-row">
-          <p class="price-item-name">Basics</p>
-          <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
-        </div>
-        <div class="price-item flex-row">
-          <p class="price-item-name">Standard</p>
-          <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
-        </div>
-        <div class="price-item flex-row">
-          <p class="price-item-name">Pro care</p>
-          <img class="price-item-arrow" src="assets/svg/arrow.svg" alt="arrow">
-        </div>
-      </div>
-      <div class="prices-call-us flex-column">
-        <h2 class="prices-call-us-header">Our best <span class="prices-call-us-highlight">gardeners</span> are ready to
-          help you</h2>
-        <button class="button prices-call-us-button">Contact us</button>
-        <img class="prices-call-us-image" src="assets/img/leafs_small.png" alt="leafs">
-      </div>
-    </section>
-    <section class="contacts flex-row" id="contacts">
-      <img class="contacts-woman" src="assets/img/contact_woman.png" alt="contact-woman">
-      <h2 class="contacts-header">Contact us</h2>
-      <div class="contacts-container-wrapper">
-        <div class="contacts-container flex-row">
-          <p>City</p>
-          <img class="contacts-item-arrow" src="assets/svg/arrow_white.svg" alt="arrow-white">
-        </div>
-        <div class="city-container yonkers">
-          <p>City</p>
-          <p class="grey">Yonkers, NY</p>
-          <p>Phone:</p>
-          <p class="grey">+1 914 678 0003</p>
-          <p>Office adress:</p>
-          <p class="grey">511 Warburton Ave</p>
-          <button class="button">Call us</button>
-        </div>
-        <div class="city-container canandaigua">
-          <p>City</p>
-          <p class="grey">Canandaigua, NY</p>
-          <p>Phone:</p>
-          <p class="grey">+1 585 393 0001</p>
-          <p>Office adress:</p>
-          <p class="grey">151 Charlotte Street</p>
-          <button class="button">Call us</button>
-        </div>
-        <div class="city-container sherrill">
-          <p>City</p>
-          <p class="grey">Sherrill, NY</p>
-          <p>Phone:</p>
-          <p class="grey">+1 315 908 0004</p>
-          <p>Office adress:</p>
-          <p class="grey">14 WEST Noyes BLVD</p>
-          <button class="button">Call us</button>
-        </div>
-        <div class="city-container new-york">
-          <p>City</p>
-          <p class="grey">New York City</p>
-          <p>Phone:</p>
-          <p class="grey">+1 212 456 0002</p>
-          <p>Office adress:</p>
-          <p class="grey">9 East 91st Street</p>
-          <button class="button">Call us</button>
+    <section class="contacts" id="contacts">
+      <div class="contacts-box flex-row">
+        <img class="contacts-woman" src="assets/img/contact_woman.png" alt="contact-woman">
+        <h2 class="contacts-header">Contact us</h2>
+        <div class="contacts-container-wrapper">
+          <div class="contacts-container flex-row">
+            <p>City</p>
+            <img class="contacts-item-arrow" src="assets/svg/arrow_white.svg" alt="arrow-white">
+          </div>
+          <div class="city-container yonkers">
+            <p>City</p>
+            <p class="grey">Yonkers, NY</p>
+            <p>Phone:</p>
+            <p class="grey">+1 914 678 0003</p>
+            <p>Office adress:</p>
+            <p class="grey">511 Warburton Ave</p>
+            <button class="button">Call us</button>
+          </div>
+          <div class="city-container canandaigua">
+            <p>City</p>
+            <p class="grey">Canandaigua, NY</p>
+            <p>Phone:</p>
+            <p class="grey">+1 585 393 0001</p>
+            <p>Office adress:</p>
+            <p class="grey">151 Charlotte Street</p>
+            <button class="button">Call us</button>
+          </div>
+          <div class="city-container sherrill">
+            <p>City</p>
+            <p class="grey">Sherrill, NY</p>
+            <p>Phone:</p>
+            <p class="grey">+1 315 908 0004</p>
+            <p>Office adress:</p>
+            <p class="grey">14 WEST Noyes BLVD</p>
+            <button class="button">Call us</button>
+          </div>
+          <div class="city-container new-york">
+            <p>City</p>
+            <p class="grey">New York City</p>
+            <p>Phone:</p>
+            <p class="grey">+1 212 456 0002</p>
+            <p>Office adress:</p>
+            <p class="grey">9 East 91st Street</p>
+            <button class="button">Call us</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="flex-row">
-    <div class="footer-data flex-row">
-      <p>©</p>
-      <p>2022</p>
-      <a class="github" href="https://github.com/NikaKlokava">github</a>
+  <footer>
+    <div class="footer-container flex-row">
+      <div class="footer-data flex-row">
+        <p>©</p>
+        <p>2022</p>
+        <a class="github" href="https://github.com/NikaKlokava">github</a>
+      </div>
+      <a class="footer-rsschool" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+      <ul class="social-links flex-row">
+        <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img
+              src="assets/svg/instagram.svg" alt="instagram"></a></li>
+        <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/facebook.svg"
+              alt="facebook"></a></li>
+        <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/twitter.svg"
+              alt="twitter"></a></li>
+        <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/pinterest.svg"
+              alt="pinterest"></a></li>
+      </ul>
     </div>
-    <a class="footer-rsschool" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
-    <ul class="social-links flex-row">
-      <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/instagram.svg"
-            alt="instagram"></a></li>
-      <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/facebook.svg"
-            alt="facebook"></a></li>
-      <li class="flex-row"><a class="flex-row" href="https://github.com/NikaKlokava"><img src="assets/svg/twitter.svg"
-            alt="twitter"></a></li>
-      <li class="flex-row"><a class="flex-row" href="https://rs.school/js-stage0/"><img src="assets/svg/pinterest.svg"
-            alt="pinterest"></a></li>
-    </ul>
   </footer>
 </body>
 
