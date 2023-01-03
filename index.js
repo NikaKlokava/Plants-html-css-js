@@ -1,11 +1,9 @@
 function handleBurgerClick() {
-  var navbarEl = document.getElementById("navbar"); // это мы получили наш navbar
-  // var lineEls = document.getElementsByClassName("line"); // lines в бургер-иконке (4 шт), чтобы сделать крестик
+  var navbarEl = document.getElementById("navbar");
 
   navbarEl.className =
     navbarEl.className === "navbar" ? "navbar burgerView" : "navbar";
 
-  //todo remove
   var burgerItemEl = document.getElementById("navbar-burger-item");
   burgerItemEl.className =
     burgerItemEl.className === "navbar-burger-item"
@@ -14,7 +12,6 @@ function handleBurgerClick() {
 }
 
 window.onload = function () {
-  // todo: think about navbar-items one handler
   var navbarItemEls = document.getElementsByClassName("navbar-item");
   for (let item of navbarItemEls) {
     item.onclick = handleBurgerClick;
@@ -28,4 +25,28 @@ window.onload = function () {
 
   var burgerIconEl = document.getElementById("navbar-burger-icon");
   burgerIconEl.onclick = handleBurgerClick;
+};
+
+function handleButtonClick() {
+  var cardEls = document.getElementsByClassName("service-card");
+
+  // var buttonEls = document.getElementsByClassName("service-buttons");
+  // for (let button of buttonEls) {
+  // console.log(button)};
+  for (let item of cardEls) {
+    if (item.textContent.includes('Garden')) {
+      item.className += "service-card flex-column";
+    }
+    item.className =
+    item.className === "service-card flex-column"
+        ? "service-card flex-column blur"
+        : "service-card flex-column";
+  }
+}
+
+window.onload = function () {
+  var buttonEls = document.getElementsByClassName("service-buttons");
+  for (let item of buttonEls) {
+    item.onclick = handleButtonClick;
+  }
 };
