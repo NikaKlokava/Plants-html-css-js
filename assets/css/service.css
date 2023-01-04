@@ -39,7 +39,7 @@
   transition: 0.5s;
 }
 
-.service-button:active {
+.service-button-active {
   color: #FFFFFF;
   background: #E06733;
   transition: 0.3s;
@@ -90,7 +90,7 @@
 }
 
 .blur {
-  filter: blur(5px);
+  filter: blur(3px);
   transition: 0.5s;
 }
 

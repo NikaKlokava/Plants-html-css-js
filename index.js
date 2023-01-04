@@ -26,27 +26,47 @@ window.onload = function () {
   var burgerIconEl = document.getElementById("navbar-burger-icon");
   burgerIconEl.onclick = handleBurgerClick;
 };
-
-function handleButtonClick() {
-  var cardEls = document.getElementsByClassName("service-card");
-
-  // var buttonEls = document.getElementsByClassName("service-buttons");
-  // for (let button of buttonEls) {
-  // console.log(button)};
-  for (let item of cardEls) {
-    if (item.textContent.includes('Garden')) {
-      item.className += "service-card flex-column";
-    }
-    item.className =
-    item.className === "service-card flex-column"
-        ? "service-card flex-column blur"
-        : "service-card flex-column";
-  }
-}
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 window.onload = function () {
-  var buttonEls = document.getElementsByClassName("service-buttons");
+  var buttonEls = document.getElementsByClassName("service-button");
+  var cardEls = document.getElementsByClassName("service-card");
+
+  let activeButtons = [];
+
   for (let item of buttonEls) {
-    item.onclick = handleButtonClick;
+    item.onclick = function (event) {
+      const buttonName = event.target.dataset.name;
+
+      if (item.classList.contains("service-button-active")) {
+        item.classList.remove("service-button-active");
+        activeButtons = activeButtons.filter((ab) => ab !== buttonName);
+      } else {
+        item.classList.add("service-button-active");
+        activeButtons.push(buttonName);
+      }
+
+      // обработка нажатия 3ех кнопок
+      if (activeButtons.length === 3) {
+        const firstPressedActiveButton = activeButtons[0];
+        for (let button of buttonEls) {
+          if (button.dataset.name === firstPressedActiveButton) {
+            button.classList.remove("service-button-active");
+          }
+        }
+        activeButtons.shift();
+      }
+
+      for (let card of cardEls) {
+        const isCardContainsAnyActiveButton = !!activeButtons.find((ab) =>
+          card.dataset.name.includes(ab)
+        );
+        if (isCardContainsAnyActiveButton || !activeButtons.length) {
+          card.classList.remove("blur");
+        } else {
+          card.classList.add("blur");
+        }
+      }
+    };
   }
 };
