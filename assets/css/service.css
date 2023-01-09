@@ -1,11 +1,13 @@
 .service {
   width: 100%;
 }
+
 .service-container {
   max-width: 1440px;
   padding: 40px 115px 121px 103px;
   margin: 0 auto;
 }
+
 .service-header-container {
   flex-wrap: wrap;
   margin-bottom: 80px;
@@ -25,17 +27,19 @@
   width: 559px;
   justify-content: space-between;
 }
+
 .service-buttons .service-button:nth-child(1),
 .service-buttons .service-button:nth-child(3) {
- padding-left: 2px;
+  padding-left: 2px;
 }
+
 .service-button:hover {
   text-shadow: 0px 1px 5px #E06733;
-  cursor:pointer;
+  cursor: pointer;
   transition: 0.5s;
 }
 
-.service-button:active {
+.service-button-active {
   color: #FFFFFF;
   background: #E06733;
   transition: 0.3s;
@@ -79,6 +83,15 @@
 
 .service-card-texts .planting {
   padding-bottom: 12px;
+}
+
+.service-card {
+  transition: 0.5s;
+}
+
+.blur {
+  filter: blur(3px);
+  transition: 0.5s;
 }
 
 @media screen and (max-width:768px) {
@@ -147,10 +160,11 @@
     line-height: 20px;
     margin-bottom: 9px;
   }
+
   .service-buttons .service-button:nth-child(1),
-.service-buttons .service-button:nth-child(3) {
- padding-left: 5px;
-}
+  .service-buttons .service-button:nth-child(3) {
+    padding-left: 5px;
+  }
 
   .service .service-cards-container {
     grid-template-columns: 1fr;
