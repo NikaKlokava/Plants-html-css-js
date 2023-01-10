@@ -97,6 +97,9 @@
   padding: calc((16px - 4px) / 2) calc((16px - 6px) / 2);
   border-radius: calc(16px / 2);
 }
+.prices .price-item>.price-item-arrow:hover {
+  box-shadow: 0px 1px 10px #b6e29d;
+}
 
 .prices .price-item>.price-item-arrow.active {
   background: #AEA1A1;
