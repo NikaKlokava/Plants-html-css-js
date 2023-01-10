@@ -55,11 +55,11 @@
   border-radius: calc(16px / 2);
 }
 
-.contacts-container:active {
-  transition: 0.3s;
+.contacts-container.active {
   background: #C1E698;
   border: 1px solid #D6E7D2;
   box-shadow: none;
+  /* height: 284px; */
 }
 
 /* .city-container */

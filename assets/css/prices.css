@@ -28,15 +28,14 @@
 }
 
 .prices .price-item {
-  flex-wrap: wrap;
-  padding: 15px 40px;
-  background: #EDF2EC;
-  border-radius: 20px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 15px 40px;
+  border-radius: 20px;
   margin-bottom: 32px;
   transition: all 0.5s ease-in-out;
+  background: #EDF2EC;
 }
 
 .prices .price-item.active {
@@ -53,12 +52,12 @@
 }
 
 .price-item .open-price-block p:nth-child(1) {
-  padding-top: 6px;
-  margin-top: 10px;
-  border-top: 0.5px solid #AEA1A1;
   font-size: 10px;
   font-weight: 300;
   line-height: 10px;
+  padding-top: 6px;
+  border-top: 0.5px solid #AEA1A1;
+  margin-top: 10px;
   color: #717171;
 }
 
@@ -77,10 +76,7 @@
 }
 
 .price-item .open-price-block .button-price {
-  /* width: 86px;
-  height: 25px; */
   font-family: 'Inter';
-
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -105,7 +101,6 @@
 .prices .price-item>.price-item-arrow.active {
   background: #AEA1A1;
   transform: rotate(0.5turn);
-  background-image: url("/assets/svg/arrow_white.svg");
 }
 
 .prices .prices-call-us {

@@ -71,6 +71,15 @@ function handlePriceClick(event) {
   }
 }
 
+function handleContactsClick () {
+  var contactsEls = document.getElementById("contacts-container");
+  if (contactsEls.classList.contains('active')) {
+    contactsEls.classList.remove('active')
+  } else {
+    contactsEls.classList.add('active')
+  }
+}
+
 window.onload = function () {
   var navbarItemEls = document.getElementsByClassName("navbar-item");
   for (let item of navbarItemEls) {
@@ -97,4 +106,7 @@ window.onload = function () {
   for (let arrowEl of priceArrowEls) {
     arrowEl.onclick = handlePriceClick;
   }
+
+  var contactsEls = document.getElementById("contacts-container");
+  contactsEls.onclick = handleContactsClick;
 };
