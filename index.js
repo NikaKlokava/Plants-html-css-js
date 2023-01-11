@@ -80,7 +80,6 @@ function handleContactsClick(event) {
   var selectedElement = document.getElementById("selected-elem");
   var cityContain = document.getElementsByClassName("city-container");
 
-
   const nameElem = event.target.dataset.name;
   const choosenElement = event.target;
 
@@ -98,14 +97,16 @@ function handleContactsClick(event) {
     cityElement.classList.add("choosen");
   } else {
     selectedElement.textContent = "City";
-    cityElement.classList.remove("choosen")
-  } 
+    cityElement.classList.remove("choosen");
+  }
 
   for (let item of cityContain) {
     if (item.dataset.name === nameElem) {
-      setTimeout(() => {item.classList.add("opened")}, 200)
+      setTimeout(() => {
+        item.classList.add("opened");
+      }, 200);
     } else {
-      item.classList.remove("opened")
+      item.classList.remove("opened");
     }
   }
 }
@@ -141,8 +142,9 @@ window.onload = function () {
   var contactsEls = document.getElementById("contacts-container");
   contactsEls.onclick = handleContactsClick;
 
-  var contactsSelect = document.getElementsByClassName("select-option"); {
-    for(let elem of contactsSelect) {
+  var contactsSelect = document.getElementsByClassName("select-option");
+  {
+    for (let elem of contactsSelect) {
       elem.onclick = handleContactsClick;
     }
   }

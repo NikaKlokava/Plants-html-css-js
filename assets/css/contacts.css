@@ -38,6 +38,7 @@
 .contacts-container:hover {
   box-shadow: 0px 4px 7px #499A18;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .contacts .contacts-container>* {
@@ -53,6 +54,12 @@
   color: white;
   padding: calc((16px - 4px) / 2) calc((16px - 6px) / 2);
   border-radius: calc(16px / 2);
+  transition: all 0.3s ease-in-out;
+}
+.contacts-container.active .contacts-item-arrow {
+  background: #8BA07E;
+  transform: rotate(-180deg);
+  transition: all 0.5s ease-in-out;
 }
 
 /******************************************************************************************/
