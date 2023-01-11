@@ -56,13 +56,14 @@
   border-radius: calc(16px / 2);
   transition: all 0.3s ease-in-out;
 }
+
 .contacts-container.active .contacts-item-arrow {
   background: #8BA07E;
   transform: rotate(-180deg);
-  transition: all 0.5s ease-in-out;
 }
 
 /******************************************************************************************/
+
 .contacts-select-container {
   height: 0px;
   transition: 0.3s ease-out;
@@ -115,31 +116,30 @@
   background: #C1E698;
 }
 
-
-
 /*******************************************************************************************/
 /* .city-container */
 .city-container {
-  display: none;
   height: 0px;
-  transition: height 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
+
 .city-container.opened {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   width: 100%;
-  height: 214px;
+  height: fit-content;
   padding: 17px 76px 32px 33px;
   margin-top: 47px;
   background: #EDF2EC;
   border: 1px solid #000000;
   border-radius: 20px;
-  transition: height 2s ease-in-out;
+  opacity: 1;
 }
+
 .city-container p {
   font-size: 0px;
   line-height: 0px;
-  transition: all 1s ease-in-out;
 }
 
 .city-container.opened p {
@@ -147,11 +147,15 @@
   line-height: 40px;
   letter-spacing: 0.05em;
   color: #000000;
-  transition: all 1s ease-in-out;
+  opacity: 1;
 }
 
 .city-container.opened .grey {
   color: #717171;
+}
+
+.city-container button {
+  opacity: 0;
 }
 
 .city-container.opened button {
@@ -161,7 +165,9 @@
   font-weight: 700;
   font-size: 10px;
   line-height: 13px;
+  margin-top: 20px;
   color: #717171;
+  opacity: 1;
 }
 
 @media screen and (max-width:768px) {
@@ -196,6 +202,29 @@
   }
 }
 
+/* adaptation for iphone */
+
+@media screen and (max-width:620px) {
+  .contacts-box {
+    padding: 35px 75px 0px 75px;
+  }
+
+  .city-container.opened {
+    grid-template-columns: 1fr 1.2fr;
+    padding: 23px 36px;
+  }
+}
+
+@media screen and (max-width:440px) {
+  .contacts-box {
+    padding: 25px 42px 0px 38px;
+  }
+
+  .city-container.opened {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
 @media screen and (max-width:380px) {
   .contacts-box {
     padding: 25px 42px 0px 38px;
@@ -214,12 +243,28 @@
   .contacts .contacts-container {
     margin-top: 81px;
     padding-right: 20px;
-    background: #D6E7D2;
+  }
+
+  .contacts .contacts-container.margin {
+    margin-top: 41px;
   }
 
   .contacts .contacts-woman {
     margin-left: 0px;
+    opacity: 1;
     width: 100px;
     height: 124.25px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .contacts .contacts-woman.none {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+  }
+
+  .city-container.opened p:nth-child(5),
+  .city-container.opened p:nth-child(6) {
+    line-height: 20px;
   }
 }
