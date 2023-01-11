@@ -79,6 +79,7 @@ function handleContactsClick(event) {
   var contactsContainer = document.getElementById("contacts-select-container");
   var selectedElement = document.getElementById("selected-elem");
   var cityContain = document.getElementsByClassName("city-container");
+  var contactWoman = document.getElementById("contacts-woman")
 
   const nameElem = event.target.dataset.name;
   const choosenElement = event.target;
@@ -87,9 +88,13 @@ function handleContactsClick(event) {
   if (cityElement.classList.contains("active")) {
     cityElement.classList.remove("active");
     contactsContainer.classList.remove("active");
+    cityElement.classList.remove("margin");
+    contactWoman.classList.remove("none");
   } else {
     cityElement.classList.add("active");
     contactsContainer.classList.add("active");
+    cityElement.classList.add("margin");
+    contactWoman.classList.add("none");
   }
 
   if (nameElem) {
@@ -102,9 +107,11 @@ function handleContactsClick(event) {
 
   for (let item of cityContain) {
     if (item.dataset.name === nameElem) {
+      contactWoman.classList.add("none");
+      cityElement.classList.add("margin");
       setTimeout(() => {
         item.classList.add("opened");
-      }, 200);
+      }, 300);
     } else {
       item.classList.remove("opened");
     }

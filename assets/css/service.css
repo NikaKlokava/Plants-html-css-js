@@ -172,3 +172,37 @@
     padding-left: 26px;
   }
 }
+/* adaptation for iphone */
+@media screen and (max-width:430px) {
+  .service-container {
+    padding: 30px 50px 27px 25px;
+  }
+
+  .service-header {
+    flex-basis: 187px;
+    margin-right: 0px;
+  }
+
+  .service .service-buttons {
+    max-width: 252px;
+    margin-top: 38px;
+  }
+
+  .service-header-container {
+    margin-bottom: 30px;
+  }
+
+  .service .service-buttons>.service-button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 9px;
+  }
+
+  .service .service-cards-container {
+    grid-template-columns: 1fr;
+    row-gap: 34px;
+    padding-left: 26px;
+  }
+}

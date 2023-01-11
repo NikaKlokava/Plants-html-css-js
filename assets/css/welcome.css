@@ -117,3 +117,13 @@
     font-size: 10px;
   }
 }
+/* adaptation for iphone */
+@media screen and (max-width:430px) {
+  .welcome-content {
+    max-width: 100%;
+  }
+
+  .welcome-image {
+    display: none;
+  }
+}

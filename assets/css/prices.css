@@ -230,3 +230,42 @@
     display: none;
   }
 }
+/* adaptation for iphone */
+@media screen and (max-width:540px) {
+  .prices-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 76px 40px 78px;
+  }
+
+  .prices .prices-items {
+    padding: 29px 22px calc(29px - 17px) 22px;
+    align-self: stretch;
+  }
+
+  .prices .price-item {
+    padding: 14px 40px 14px 30px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .prices .price-item>.price-item-name {
+    font-size: 15px;
+  }
+
+  .prices .prices-call-us {
+    align-items: center;
+  }
+
+  .prices .prices-call-us .prices-call-us-header {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .prices .prices-call-us .prices-call-us-image {
+    display: none;
+  }
+}
