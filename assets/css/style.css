@@ -17,9 +17,6 @@ header,
 .contacts {
   background: #EDF2EC;
 }
-.contacts {
-  min-height: 445px;
-}
 
 .flex-column {
   display: flex;
