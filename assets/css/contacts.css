@@ -169,6 +169,11 @@
   color: #717171;
   opacity: 1;
 }
+.city-container.opened button:hover {
+cursor: pointer;
+background-color: #E06733;
+color: #ffffff;
+}
 
 @media screen and (max-width:768px) {
   .contacts-box {
@@ -192,6 +197,10 @@
     width: 100%;
     min-height: 325px;
     margin-bottom: 77px;
+  }
+
+  .contacts .contacts-container.margin {
+    margin-top: 41px;
   }
 
   .contacts .contacts-woman {
@@ -223,9 +232,22 @@
   .city-container.opened {
     grid-template-columns: 1fr 2fr;
   }
+
+  .city-container.opened p {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .city-container.opened p:nth-child(5),
+  .city-container.opened p:nth-child(6) {
+    line-height: 20px;
+  }
+
 }
 
 @media screen and (max-width:380px) {
+  .contacts {
+    min-height: 445px;
+  }
   .contacts-box {
     padding: 25px 42px 0px 38px;
   }

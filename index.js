@@ -79,11 +79,10 @@ function handleContactsClick(event) {
   var contactsContainer = document.getElementById("contacts-select-container");
   var selectedElement = document.getElementById("selected-elem");
   var cityContain = document.getElementsByClassName("city-container");
-  var contactWoman = document.getElementById("contacts-woman")
+  var contactWoman = document.getElementById("contacts-woman");
 
   const nameElem = event.target.dataset.name;
   const choosenElement = event.target;
-
 
   if (cityElement.classList.contains("active")) {
     cityElement.classList.remove("active");
@@ -125,10 +124,10 @@ window.onload = function () {
     item.onclick = handleBurgerClick;
   }
 
-  var mainEl = document.getElementsByTagName("main")[0];
+  var mainEl = document.getElementsByClassName("welcome")[0];
   mainEl.onclick = handleBurgerClick;
 
-  var footerEl = document.getElementsByTagName("footer")[0];
+  var footerEl = document.getElementsByClassName("about")[0];
   footerEl.onclick = handleBurgerClick;
 
   var burgerIconEl = document.getElementById("navbar-burger-icon");
