@@ -2,22 +2,25 @@ let activeButtons = [];
 /******************************************   BURGER  ***********************************/
 
 function handleBurgerClick() {
-  var navbarEl = document.getElementById("navbar");
+  const navbarEl = document.getElementById("navbar");
+  if (navbarEl.classList.contains("burgerView")) {
+    navbarEl.classList.remove("burgerView");
+  } else {
+    navbarEl.classList.add("burgerView");
+  }
 
-  navbarEl.className =
-    navbarEl.className === "navbar" ? "navbar burgerView" : "navbar";
-
-  var burgerItemEl = document.getElementById("navbar-burger-item");
-  burgerItemEl.className =
-    burgerItemEl.className === "navbar-burger-item"
-      ? "navbar-burger-item burgerView"
-      : "navbar-burger-item";
+  const burgerItemEl = document.getElementById("navbar-burger-item");
+  if (burgerItemEl.classList.contains("burgerView")) {
+    burgerItemEl.classList.remove("burgerView");
+  } else {
+    burgerItemEl.classList.add("burgerView");
+  }
 }
 /******************************************  SERVICE   ***********************************/
 
 function handleServiceClick(event, item) {
-  var buttonEls = document.getElementsByClassName("service-button");
-  var cardEls = document.getElementsByClassName("service-card");
+  const buttonEls = document.getElementsByClassName("service-button");
+  const cardEls = document.getElementsByClassName("service-card");
   const buttonName = event.target.dataset.name;
 
   if (item.classList.contains("service-button-active")) {
@@ -53,7 +56,7 @@ function handleServiceClick(event, item) {
 /******************************************   PRICES   ***********************************/
 
 function handlePriceClick(event) {
-  var priceArrowEls = document.getElementsByClassName("price-item-arrow");
+  const priceArrowEls = document.getElementsByClassName("price-item-arrow");
   const clickedElementName = event.target.dataset.name;
 
   for (let arrowEl of priceArrowEls) {
@@ -73,85 +76,114 @@ function handlePriceClick(event) {
   }
 }
 /*****************************************   CONTACTS   ***********************************/
-
-function handleContactsClick(event) {
-  var cityElement = document.getElementById("contacts-container");
-  var contactsContainer = document.getElementById("contacts-select-container");
-  var selectedElement = document.getElementById("selected-elem");
-  var cityContain = document.getElementsByClassName("city-container");
-  var contactWoman = document.getElementById("contacts-woman");
-
-  const nameElem = event.target.dataset.name;
-  const choosenElement = event.target;
-
-  if (cityElement.classList.contains("active")) {
-    cityElement.classList.remove("active");
-    contactsContainer.classList.remove("active");
-    cityElement.classList.remove("margin");
-    contactWoman.classList.remove("none");
-  } else {
-    cityElement.classList.add("active");
-    contactsContainer.classList.add("active");
-    cityElement.classList.add("margin");
-    contactWoman.classList.add("none");
+function closeSelector(isElementChoosen) {
+  const selectorButtonEl = document.getElementById("contacts-selector-button");
+  selectorButtonEl.classList.remove("active", "margin");
+  if (!isElementChoosen) {
+    selectorButtonEl.classList.remove("choosen");
   }
 
-  if (nameElem) {
-    selectedElement.textContent = choosenElement.textContent;
-    cityElement.classList.add("choosen");
-  } else {
-    selectedElement.textContent = "City";
-    cityElement.classList.remove("choosen");
-  }
+  const options = document.getElementById("contacts-options");
+  options.classList.remove("visible");
 
-  for (let item of cityContain) {
-    if (item.dataset.name === nameElem) {
-      contactWoman.classList.add("none");
-      cityElement.classList.add("margin");
-      setTimeout(() => {
-        item.classList.add("opened");
-      }, 300);
-    } else {
-      item.classList.remove("opened");
-    }
+  const imageEl = document.getElementById("contacts-image");
+  imageEl.classList.remove("visible");
+}
+
+function openSelector() {
+  const selectorButtonEl = document.getElementById("contacts-selector-button");
+  selectorButtonEl.classList.add("active", "margin");
+
+  const options = document.getElementById("contacts-options");
+  options.classList.add("visible");
+
+  const imageEl = document.getElementById("contacts-image");
+  imageEl.classList.add("visible");
+
+  const selectorValue = document.getElementById("contacts-selector-value");
+  selectorValue.textContent = "City";
+
+  const cityDetails = document.getElementsByClassName("city-container");
+  for (let item of cityDetails) {
+    item.classList.remove("visible");
   }
 }
-/******************************************  window.onload  ***********************************/
 
-window.onload = function () {
-  var navbarItemEls = document.getElementsByClassName("navbar-item");
-  for (let item of navbarItemEls) {
-    item.onclick = handleBurgerClick;
+function toogleSelector() {
+  const selectorButtonEl = document.getElementById("contacts-selector-button");
+  if (selectorButtonEl.classList.contains("active")) {
+    closeSelector();
+  } else {
+    openSelector();
   }
+}
 
-  var mainEl = document.getElementsByClassName("welcome")[0];
-  mainEl.onclick = handleBurgerClick;
+function chooseCity(event) {
+  const selectorButtonEl = document.getElementById("contacts-selector-button");
+  const selectorValue = document.getElementById("contacts-selector-value");
 
-  var footerEl = document.getElementsByClassName("about")[0];
-  footerEl.onclick = handleBurgerClick;
+  selectorButtonEl.classList.add("choosen");
+  selectorValue.textContent = event.target.textContent;
 
-  var burgerIconEl = document.getElementById("navbar-burger-icon");
-  burgerIconEl.onclick = handleBurgerClick;
+  closeSelector(true);
 
-  var buttonEls = document.getElementsByClassName("service-button");
-  for (let item of buttonEls) {
-    item.onclick = (event) => {
-      handleServiceClick(event, item);
+  const cityDetailsEls = document.getElementsByClassName("city-container");
+  const cityDetailsEl = Array.from(cityDetailsEls).find(
+    (el) => el.dataset.name === event.target.dataset.name
+  );
+  setTimeout(() => {
+    cityDetailsEl.classList.add("visible");
+  }, 300);
+
+  const imageEl = document.getElementById("contacts-image");
+  imageEl.classList.add("visible");
+
+  selectorButtonEl.classList.add("margin");
+}
+
+/******************************************  on complete state  ***********************************/
+
+document.onreadystatechange = () => {
+  if (document.readyState === "complete") {
+    const navbarItemEls = document.getElementsByClassName("navbar-item");
+    for (let item of navbarItemEls) {
+      item.onclick = handleBurgerClick;
+    }
+
+    const closeBurgerView = () => {
+      const navbarEl = document.getElementById("navbar");
+      if (navbarEl.classList.contains("burgerView")) {
+        handleBurgerClick();
+      }
     };
-  }
 
-  var priceArrowEls = document.getElementsByClassName("price-item-arrow");
-  for (let arrowEl of priceArrowEls) {
-    arrowEl.onclick = handlePriceClick;
-  }
+    const mainEl = document.getElementsByTagName("main")[0];
+    mainEl.onclick = closeBurgerView;
 
-  var contactsEls = document.getElementById("contacts-container");
-  contactsEls.onclick = handleContactsClick;
+    const footerEl = document.getElementsByTagName("footer")[0];
+    footerEl.onclick = closeBurgerView;
 
-  var contactsSelect = document.getElementsByClassName("select-option");
-  {
+    const burgerIconEl = document.getElementById("navbar-burger-icon");
+    burgerIconEl.onclick = handleBurgerClick;
+
+    const buttonEls = document.getElementsByClassName("service-button");
+    for (let item of buttonEls) {
+      item.onclick = (event) => {
+        handleServiceClick(event, item);
+      };
+    }
+
+    const priceArrowEls = document.getElementsByClassName("price-item-arrow");
+    for (let arrowEl of priceArrowEls) {
+      arrowEl.onclick = handlePriceClick;
+    }
+
+    const contactsEls = document.getElementById("contacts-selector-button");
+    contactsEls.onclick = toogleSelector;
+
+    const contactsSelect = document.getElementsByClassName("select-option");
     for (let elem of contactsSelect) {
-      elem.onclick = handleContactsClick;
+      elem.onclick = chooseCity;
     }
   }
 };
