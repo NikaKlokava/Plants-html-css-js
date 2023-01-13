@@ -52,9 +52,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: max-height 0.8s ease-in-out;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.7s ease-out;
   }
 
   .navbar-burger-item {
@@ -76,7 +76,7 @@
 
   .burgerView .navbar-items {
     max-height: 100vh;
-    transition: max-height 1.5s ease-in-out;
+    transition: all 2s ease-in-out;
   }
 
   .burgerView .line:nth-child(1),
@@ -86,12 +86,12 @@
 
   .burgerView .line:nth-child(2) {
     transform: rotateZ(40deg) scaleX(0.95) translate(5px, 5px);
-    transition: 0.5s;
+    transition: 0.7s;
   }
 
   .burgerView .line:nth-child(3) {
     transform: rotateZ(-40deg) scaleX(0.95) translate(2px, -1px);
-    transition: 0.5s;
+    transition: 0.7s;
   }
 
 }

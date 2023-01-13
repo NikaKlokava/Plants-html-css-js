@@ -83,7 +83,7 @@
 .contacts-options.visible {
   height: 234px;
   background: #DCE9D9;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .contacts-options.visible .select-options {
@@ -102,7 +102,7 @@
   letter-spacing: 0.05em;
   color: #499A18;
   border-bottom: 1px solid #D9D9D9;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .contacts-options.visible .select-option:hover {
