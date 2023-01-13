@@ -284,7 +284,14 @@ color: #ffffff;
     height: 0px;
     width: 0px;
   }
-
+  .city-container p:nth-child(4) {
+    opacity:0;
+    transition: 0.3 ease-in-out;
+  }
+  .city-container.visible p:nth-child(4) {
+    opacity:1;
+    transition: 0.3 ease-in-out;
+  }
   .city-container.visible p:nth-child(5),
   .city-container.visible p:nth-child(6) {
     line-height: 20px;
