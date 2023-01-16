@@ -143,51 +143,6 @@ function chooseCity(event) {
 
 /******************************************  on complete state  ***********************************/
 
-// document.onreadystatechange = () => {
-//   if (document.readyState === "complete") {
-//     const navbarItemEls = document.getElementsByClassName("navbar-item");
-//     for (let item of navbarItemEls) {
-//       item.onclick = handleBurgerClick;
-//     }
-
-//     const closeBurgerView = () => {
-//       const navbarEl = document.getElementById("navbar");
-//       if (navbarEl.classList.contains("burgerView")) {
-//         handleBurgerClick();
-//       }
-//     };
-
-//     const mainEl = document.getElementsByTagName("main")[0];
-//     mainEl.onclick = closeBurgerView;
-
-//     const footerEl = document.getElementsByTagName("footer")[0];
-//     footerEl.onclick = closeBurgerView;
-
-//     const burgerIconEl = document.getElementById("navbar-burger-icon");
-//     burgerIconEl.onclick = handleBurgerClick;
-
-//     const buttonEls = document.getElementsByClassName("service-button");
-//     for (let item of buttonEls) {
-//       item.onclick = (event) => {
-//         handleServiceClick(event, item);
-//       };
-//     }
-
-//     const priceArrowEls = document.getElementsByClassName("price-item-arrow");
-//     for (let arrowEl of priceArrowEls) {
-//       arrowEl.onclick = handlePriceClick;
-//     }
-
-//     const contactsEls = document.getElementById("contacts-selector-button");
-//     contactsEls.onclick = toogleSelector;
-
-//     const contactsSelect = document.getElementsByClassName("select-option");
-//     for (let elem of contactsSelect) {
-//       elem.onclick = chooseCity;
-//     }
-//   }
-// };
-
 function ready() {
   const navbarItemEls = document.getElementsByClassName("navbar-item");
   for (let item of navbarItemEls) {
