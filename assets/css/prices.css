@@ -230,6 +230,7 @@
     display: none;
   }
 }
+
 /* adaptation for iphone */
 @media screen and (max-width:540px) {
   .prices-container {

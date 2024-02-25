@@ -1,7 +1,13 @@
 # <p align="center"> *Learning html and css* </p>
 ----
 ### Project
-- 🌿 Plants single-page website;
+
+- Plants single-page website;
+- From the course program at RS School;
+- Participation in reviewing the works of 4 students with the same project;
+- Assessing the quality of work using Pixel Perfect;
+- Points received for work - 100;
+
 ----
 ### Learning goals
 - ✅ To use several Google Fonts

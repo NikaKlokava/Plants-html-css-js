@@ -169,10 +169,11 @@
   color: #717171;
   opacity: 1;
 }
+
 .city-container.visible button:hover {
-cursor: pointer;
-background-color: #E06733;
-color: #ffffff;
+  cursor: pointer;
+  background-color: #E06733;
+  color: #ffffff;
 }
 
 @media screen and (max-width:768px) {
@@ -248,6 +249,7 @@ color: #ffffff;
   .contacts {
     min-height: 445px;
   }
+
   .contacts-box {
     padding: 25px 42px 0px 38px;
   }
@@ -284,14 +286,17 @@ color: #ffffff;
     height: 0px;
     width: 0px;
   }
+
   .city-container p:nth-child(4) {
-    opacity:0;
+    opacity: 0;
     transition: 0.3 ease-in-out;
   }
+
   .city-container.visible p:nth-child(4) {
-    opacity:1;
+    opacity: 1;
     transition: 0.3 ease-in-out;
   }
+
   .city-container.visible p:nth-child(5),
   .city-container.visible p:nth-child(6) {
     line-height: 20px;

@@ -172,6 +172,7 @@
     padding-left: 26px;
   }
 }
+
 /* adaptation for iphone */
 @media screen and (max-width:430px) {
   .service-container {
